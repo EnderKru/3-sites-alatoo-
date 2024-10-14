@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Tokeely Brookings';
+    src: url('fonts/Tokeely_Brookings.TTF');
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    overflow-x: hidden;
+}
+main{
+    background-color: #140F24 !important; 
+}
+
+.actlist p{
+    font-size: 36px;
+    font-family: 'Tokeely Brookings';
+    text-align: end;
+}
+.header-banner__square{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.square{
+    position: relative;
+}
+.normal-img, .glitch-img{
+    float: right;
+}
+.glitch-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.space-invaders{
+    position: absolute;
+    left: -3vw;
+}
+.header-banner-wrapper{
+    padding-bottom: 50px;
+}
+.about_software{
+    background-color: #CF1421;
+}
+.innovations{
+    background-color: #CF1421 !important;
+}
+
+.about_direction_software h1, .progr-title-software, .interview-software h1{
+    font-size: 48px;
+    color: #fff;
+    /* transform: rotate(90deg); */
+    font-family: 'Tokeely Brookings';
+    width: max-content;
+    writing-mode:vertical-lr; /* Поворот текста вертикально справа налево */
+  text-orientation: upright;
+    /* transform-origin: 0 0; */
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: relative;
+    margin-bottom: 100px;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    position: relative;
+    margin-bottom: 100px;
+}
+.about_teaching-software{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.what{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: end;
+    padding-right: 10px;
+}
+.what_text > div{
+    display: flex;
+    flex-direction: column;
+}
+.what_text p{
+    color: #EBEBEB;
+    font-size: 24px;
+    font-weight: 300;
+    width: fit-content;
+    text-align:justify;
+    max-width: 846px;
+}
+.what_text span{
+    font-weight: 600;
+    color: #fff;
+}
+.stud-title h1{
+    color: #fff;
+    text-align: start;
+    font-size: 32px;
+    font-weight: 400;
+}
+.stud-title{
+    display: flex;
+    flex-direction: row;
+    margin-left: -40px;
+}
+.stud-title img{
+    width: 50px;
+    height: 50px;
+}
+.stud-learn li, .stud-receive li{
+    color: #EBEBEB;
+    font-size: 24px;
+    max-width: 800px;
+    margin-left: -2.3%;
+}
+.stud-learn{
+    margin-top: 50px;
+}
+.list-profess > div{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list-profess h1{
+    font-size: 48px;
+    color: #fff;
+    text-align: start;
+    font-weight: 500;
+}
+.list-profess p{
+    color: #EBEBEB;
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 400px;
+    text-align: justify;
+}
+.courses div{
+    display: flex;
+    flex-direction: row;
+    margin-left: -15%;
+}
+.courses h1{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+.courses li{
+    color: #EBEBEB;
+    font-size: 24px;
+    list-style: none;
+}
+.diplom-software h1, .diplom-software p{
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Tokeely Brookings';
+    font-weight: 600;
+}
+.diplom-software h1{
+    text-align: end;
+}
+.diplom-software p{
+    text-align: start;
+}
+.diplom-software img{
+    width:100%;
+}
+.by-stud, .by-teacher{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.by-stud h2, .by-teacher h2{
+    font-size: 36px;
+    color: #fff;
+    text-align: start;
+}
