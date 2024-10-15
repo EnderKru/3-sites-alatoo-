@@ -179,3 +179,18 @@ main{
     color: #fff;
     text-align: start;
 }
+.convert{
+    background-image: url('https://college.alatoo.edu.kg/wp-content/themes/alatoo-college/assets/images/programming/convert-2.webp');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:    cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+.laptop-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
