@@ -180,17 +180,32 @@ main{
     text-align: start;
 }
 .convert{
-    background-image: url('https://college.alatoo.edu.kg/wp-content/themes/alatoo-college/assets/images/programming/convert-2.webp');
+    background-image: url('/images/convert-bg.svg');
     position: relative;
     background-repeat: no-repeat;
     background-size:    cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    max-width: 80%;
 }
 .laptop-image{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.convert-content li {
+    list-style-type: none;
+    text-align: justify;
+}
+.convert-content div{
+    margin-top: 10px;
+}
+.text-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.convert-content{
+    padding: 20px 30px !important;
 }
