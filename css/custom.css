@@ -36,6 +36,7 @@ main{
 .space-invaders{
     position: absolute;
     left: -3vw;
+    width: 20vw;
 }
 .header-banner-wrapper{
     padding-bottom: 50px;
@@ -48,6 +49,7 @@ main{
 }
 .about_direction_software{
     position: relative;
+    margin-top: 80px;
 }
 .about_direction_software h1, .progr-title-software, .interview-software h1{
     font-size: 40px;
@@ -230,7 +232,7 @@ main{
     bottom: 0;
     width: 15vw;
 }
-.pacman, .it-items, .ghosts, .first-3d-grad, .second-3d-grad, .third-3d-grad, .code-3d, .dino-img-red, .ai-3d{
+.pacman,.space-invader, .it-items, .ghosts, .first-3d-grad, .second-3d-grad, .third-3d-grad, .code-3d, .dino-img-red, .ai-3d{
     z-index: -1;
     position: absolute;
 }
@@ -277,7 +279,26 @@ main{
 .click-it{
     position: absolute;
     z-index: 2;
-    left: 16vw;
+    left: 300px;
     bottom: -15%;
     
+}
+.why-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.space-invader{
+    top: 50%;
+    left: -12%;
+}
+
+@media (max-width: 1900px) {
+    .glitch{
+        font-size: 80px !important;
+    }
+    .actlist p{
+        font-size: 24px;
+    }
 }
