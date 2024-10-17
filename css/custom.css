@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Tokeely Brookings';
     src: url('fonts/Tokeely_Brookings.TTF');
+
 }
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
@@ -300,5 +301,23 @@ main{
     }
     .actlist p{
         font-size: 24px;
+    }
+}
+@media (max-width:1024px) {
+    .glitch{
+        font-size: 60px !important;
+    }
+    .glitch-img, .normal-img {
+        width: 129px !important;
+        height: 154px !important;
+
+    }
+    .actlist p{
+        font-size: 16px;
+    }
+}
+@media (max-width:768px) {
+    .space-invaders{
+        display: none;
     }
 }
