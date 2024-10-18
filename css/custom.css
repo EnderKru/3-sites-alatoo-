@@ -1,7 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'Tokeely Brookings';
     src: url('fonts/Tokeely_Brookings.TTF');
 
+} */
+@font-face {
+    font-family: 'Tokeely Brookings';
+    src: url('fonts/Tokeely_Brookings.TTF');
 }
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
@@ -62,7 +66,10 @@ main{
     font-family: 'Tokeely Brookings';
     width: max-content;
     writing-mode:vertical-lr; /* Поворот текста вертикально справа налево */
-  text-orientation: upright;
+    text-orientation: upright;
+    display: flex;
+    justify-content: start;
+
     /* transform-origin: 0 0; */
 }
 
@@ -174,7 +181,7 @@ main{
 }
 .diplom-software h1, .diplom-software p{
     color: #fff;
-    font-size: 64px;
+    font-size: 3.5vw;
     font-family: 'Tokeely Brookings';
     font-weight: 600;
 }
@@ -315,6 +322,11 @@ main{
         font-size: 24px;
     }
 }
+/* @media (max-width: 1440px) {
+    .diplom-software h1, .diplom-software p{
+        font-size: 3vw;
+    }
+} */
 @media (max-width:1024px) {
     .glitch{
         font-size: 60px !important;
@@ -330,7 +342,39 @@ main{
     .loader-main{
         max-width: 436px !important;
     }
-
+    ul{
+        padding-left: 0 !important;
+    }
+    .convert-content h1{
+        max-width: 100%;
+    }
+    .grid-2{
+        grid-template-columns: 20% 80%;
+    }
+    .what{
+        display: none;
+    }
+    .what_text p{
+        font-size: 20px;
+    }
+    .about_teaching-software h1{
+        font-size: 32px;
+    }
+    .stud-title h1{
+        font-size: 24px;
+    }
+    .stud-title img{
+        display: none;
+    }
+    .stud-title{
+        margin-left: 0;
+    }
+    .stud-receive li, .stud-learn li{
+        margin-left: 0;
+    }
+    .stud-learn li{
+        font-size: 20px;
+    }
 }
 @media (max-width:768px) {
     .space-invaders{
@@ -348,7 +392,12 @@ main{
     .convert{
         width: 90%;
     }
-    
+    .about_software section{
+        margin-top: 70px;
+    }
+    .what_text p{
+        font-size: 16px;
+    }
 }
 @media (max-width:600px){
     .glitch{
@@ -363,10 +412,19 @@ main{
     .header-banner__main{
         width: 100% !important;
     }
+    .text-side{
+        min-width: 90%;
+    }
+    .convert{
+        min-width: 100%;
+    }
+    .what_text p{
+        font-size: 14px;
+    }
 }
 @media (max-width:400px){
     .glitch{
         font-size: 32px !important;
     }
-
+    
 }
