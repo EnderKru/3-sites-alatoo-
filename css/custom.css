@@ -204,6 +204,7 @@ main{
     font-size: 36px;
     color: #fff;
     text-align: start;
+    font-weight: 600;
 }
 .convert{
     background-image: url('/images/convert-bg.svg');
@@ -300,8 +301,8 @@ main{
     position: absolute;
     z-index: 2;
     left: 300px;
-    bottom: -15%;
-    
+    bottom: 0;
+    width: 150px;
 }
 .why-icons{
     display: flex;
@@ -313,6 +314,16 @@ main{
     top: 50%;
     left: -12%;
 }
+.videos-interview{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+
+}
+.small-screen{
+    display: none;
+}
 
 @media (max-width: 1900px) {
     .glitch{
@@ -321,13 +332,24 @@ main{
     .actlist p{
         font-size: 24px;
     }
-}
-/* @media (max-width: 1440px) {
-    .diplom-software h1, .diplom-software p{
-        font-size: 3vw;
+    .space-invader{
+
+        left: -80px;
     }
-} */
+}
+@media (max-width: 1440px) {
+    .videos-interview iframe{
+        width: 200px;
+        height: 280px;
+    }
+
+
+
+}
 @media (max-width:1024px) {
+    .small-screen{
+        display: block;
+    }
     .glitch{
         font-size: 60px !important;
     }
@@ -351,17 +373,22 @@ main{
     .grid-2{
         grid-template-columns: 20% 80%;
     }
+    .grid-3{
+        display: none;
+    }
+
     .what{
         display: none;
     }
     .what_text p{
         font-size: 20px;
     }
-    .about_teaching-software h1{
+    .about_direction_software h1, .progr-title-software, .interview-software h1{
         font-size: 32px;
     }
     .stud-title h1{
-        font-size: 24px;
+        font-size: 18px;
+        font-weight: 500;
     }
     .stud-title img{
         display: none;
@@ -374,6 +401,25 @@ main{
     }
     .stud-learn li{
         font-size: 20px;
+    }
+
+    .by-stud h2, .by-teacher h2{
+        font-size: 24px;
+    }
+    .by-stud{
+        margin-right: 35px;
+        margin-bottom: 50px;
+    }
+    .videos-interview{
+        justify-content: space-between;
+    }
+    .click-it{
+        left: 150px;
+        width: 100px;
+    }
+    .space-invader{
+        width: 100px;
+        left: -60px;
     }
 }
 @media (max-width:768px) {
@@ -398,6 +444,9 @@ main{
     .what_text p{
         font-size: 16px;
     }
+    .videos-interview{
+        justify-content: center;
+    }
 }
 @media (max-width:600px){
     .glitch{
@@ -420,6 +469,10 @@ main{
     }
     .what_text p{
         font-size: 14px;
+    }
+    .stud-title h1{
+        font-size: 16px;
+        font-weight: 500;
     }
 }
 @media (max-width:400px){
