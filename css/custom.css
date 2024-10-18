@@ -34,6 +34,9 @@ main{
     top: 0;
     right: 0;
 }
+.loader-main svg{
+    width: 100% !important;
+}
 .space-invaders{
     position: absolute;
     left: -3vw;
@@ -226,6 +229,15 @@ main{
 }
 .convert-content{
     padding: 50px 40px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.convert-content h1{
+    font-family: 'Tokeely Brookings';
+    max-width: 80%;
+
 }
 .pacman{
     position: absolute;
@@ -308,16 +320,53 @@ main{
         font-size: 60px !important;
     }
     .glitch-img, .normal-img {
-        width: 129px !important;
+        width: 134px !important;
         height: 154px !important;
 
     }
     .actlist p{
         font-size: 16px;
     }
+    .loader-main{
+        max-width: 436px !important;
+    }
+
 }
 @media (max-width:768px) {
     .space-invaders{
+        /* display: none; */
+    }
+    .glitch{
+        font-size: 42px !important;
+    }
+    .header-banner__main{
+        width: 90% !important;
+    }
+    .laptop-image, .dino-img, .why-icons{
         display: none;
     }
+    .convert{
+        width: 90%;
+    }
+    
+}
+@media (max-width:600px){
+    .glitch{
+        font-size: 38px !important;
+    }
+    .loader-main{
+        max-width: 256px !important;
+    }
+    .space-invaders{
+        display: none;
+    }
+    .header-banner__main{
+        width: 100% !important;
+    }
+}
+@media (max-width:400px){
+    .glitch{
+        font-size: 32px !important;
+    }
+
 }
