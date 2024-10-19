@@ -151,7 +151,7 @@ main{
 .courses div{
     display: flex;
     flex-direction: row;
-    margin-left: -16%;
+
 }
 .courses h1{
     color: #fff;
@@ -252,6 +252,7 @@ main{
     right: -3%;
     bottom: 0;
     width: 15vw;
+    min-width: 13vw;
 }
 .pacman,.space-invader, .it-items, .ghosts, .first-3d-grad, .second-3d-grad, .third-3d-grad, .code-3d, .dino-img-red, .ai-3d{
     z-index: -1;
@@ -275,7 +276,7 @@ main{
 .third-3d-grad{
     bottom: -5;
     left: 10%;
-    width: 17vw;
+    width: 20vw;
 }
 .code-3d{
     left: 2%;
@@ -286,11 +287,13 @@ main{
     right: 0;
     bottom: 15%;
     width: 20vw;
+    min-width: 450px;
 }
 .ai-3d{
-    bottom: 20%;
+    top: 10%;
     left: 0;
     width: 15vw;
+    min-width: 300px;
 }
 .it-items{
     bottom: 10%;
@@ -357,6 +360,27 @@ main{
     .by-stud h2, .by-teacher h2{
         font-size: 24px;
     }
+    .first-3d-grad{
+        top: 8%;
+        left: 25%;
+        width: 25vw;
+    }
+    .second-3d-grad{
+        width: 25vw;
+    }
+    .code-3d{
+        left: -5vw;
+        bottom: 30%;
+        width: 25vw;
+    }
+    .third-3d-grad{
+        bottom: -5;
+        left: 10%;
+        width: 30vw;
+    }
+    .what{
+        font-size: 28px;
+    }
     .click-it{
         width: 120px;
     }
@@ -370,6 +394,12 @@ main{
     .list-profess h1{
         font-size: 40px;
     }
+    .pacman, .ghosts{
+        width: 20vw;
+    }
+    .pacman{
+        bottom: -5vw;
+    }
 }
 @media (max-width:1024px) {
     .big-screen{
@@ -377,6 +407,11 @@ main{
     }
     .small-screen{
         display: block;
+    }
+    .code-3d{
+        left: -5vw;
+        bottom: 30%;
+        width: 30vw;
     }
     .courses div{
         margin-left: 0;
@@ -393,6 +428,10 @@ main{
     }
     .courses li{
         font-size: 20px;
+    }
+    .ai-3d{
+        top: 0;
+        min-width: 200px;
     }
     .glitch{
         font-size: 60px !important;
@@ -524,8 +563,25 @@ main{
     }
 }
 @media (max-width:600px){
+    .first-3d-grad{
+        width: 40vw;
+    }
+    .second-3d-grad{
+        bottom: 45%;
+        right: 15%;
+        width: 40vw;
+    }
+    .third-3d-grad{
+        width: 40vw;
+    }
     .glitch{
         font-size: 38px !important;
+    }
+    .pacman, .ghosts{
+        width: 30vw;
+    }
+    .dino-img-red{
+        min-width: 350px;
     }
     .courses ul{
         max-width: 80%;
@@ -589,6 +645,21 @@ main{
 @media (max-width:400px){
     .glitch{
         font-size: 32px !important;
+    }
+    .code-3d{
+        left: -10vw;
+        bottom: 25%;
+        width: 50vw;
+    }
+    .ai-3d{
+        top: -10%;
+        min-width: 150px;
+    }
+    .dino-img-red{
+        min-width: 250px;
+    }
+    .ghosts{
+        top: -8vw;
     }
     .stud-title h1{
         font-size: 14;
