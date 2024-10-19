@@ -59,19 +59,7 @@ main{
     position: relative;
     margin-top: 80px;
 }
-.about_direction_software h1, .progr-title-software, .interview-software h1{
-    font-size: 40px;
-    color: #fff;
-    /* transform: rotate(90deg); */
-    font-family: 'Tokeely Brookings';
-    width: max-content;
-    writing-mode:vertical-lr; /* Поворот текста вертикально справа налево */
-    text-orientation: upright;
-    display: flex;
-    justify-content: start;
 
-    /* transform-origin: 0 0; */
-}
 
 .grid-2{
     display: grid;
@@ -151,6 +139,7 @@ main{
     color: #fff;
     text-align: start;
     font-weight: 500;
+    max-width: 60%;
 }
 .list-profess p{
     color: #EBEBEB;
@@ -162,7 +151,7 @@ main{
 .courses div{
     display: flex;
     flex-direction: row;
-    margin-left: -15%;
+    margin-left: -16%;
 }
 .courses h1{
     color: #fff;
@@ -177,7 +166,18 @@ main{
     font-size: 24px;
     list-style: none;
     margin-bottom: 10px;
-    font-weight: 200;
+    font-weight: 400;
+    position: relative;
+}
+.courses li::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(-50%);
 }
 .diplom-software h1, .diplom-software p{
     color: #fff;
@@ -300,8 +300,8 @@ main{
 .click-it{
     position: absolute;
     z-index: 2;
-    left: 300px;
-    bottom: 0;
+    left: 230px;
+    bottom: -30px;
     width: 150px;
 }
 .why-icons{
@@ -324,7 +324,23 @@ main{
 .small-screen{
     display: none;
 }
+.diplom-title{
+    display: flex;
+    flex-direction: row;
+}
+.about_direction_software h1, .progr-title-software, .interview-software h1, .diplom-title h1{
+    font-size: 40px;
+    color: #fff;
+    /* transform: rotate(90deg); */
+    font-family: 'Tokeely Brookings';
+    width: max-content;
+    writing-mode:vertical-lr; /* Поворот текста вертикально справа налево */
+    text-orientation: upright;
+    display: flex;
+    justify-content: start;
 
+    /* transform-origin: 0 0; */
+}
 @media (max-width: 1900px) {
     .glitch{
         font-size: 80px !important;
@@ -338,17 +354,45 @@ main{
     }
 }
 @media (max-width: 1440px) {
-    .videos-interview iframe{
-        width: 200px;
-        height: 280px;
+    .by-stud h2, .by-teacher h2{
+        font-size: 24px;
     }
-
-
-
+    .click-it{
+        width: 120px;
+    }
+    .stud-title h1{
+        font-size: 26px;
+    }
+    .list-profess p{
+        max-width: 300px;
+        font-size: 18px;
+    }
+    .list-profess h1{
+        font-size: 40px;
+    }
 }
 @media (max-width:1024px) {
+    .big-screen{
+        display: none;
+    }
     .small-screen{
         display: block;
+    }
+    .courses div{
+        margin-left: 0;
+        display: grid;
+    }
+    .courses h1{
+        font-size: 32px;
+        font-family: 'Tokeely Brookings';
+        width: max-content;
+        writing-mode:vertical-lr; /* Поворот текста вертикально справа налево */
+        text-orientation: upright;
+        display: flex;
+        justify-content: start;
+    }
+    .courses li{
+        font-size: 20px;
     }
     .glitch{
         font-size: 60px !important;
@@ -383,7 +427,7 @@ main{
     .what_text p{
         font-size: 20px;
     }
-    .about_direction_software h1, .progr-title-software, .interview-software h1{
+    .about_direction_software h1, .progr-title-software, .interview-software h1, .diplom-title h1{
         font-size: 32px;
     }
     .stud-title h1{
@@ -403,9 +447,7 @@ main{
         font-size: 20px;
     }
 
-    .by-stud h2, .by-teacher h2{
-        font-size: 24px;
-    }
+
     .by-stud{
         margin-right: 35px;
         margin-bottom: 50px;
@@ -421,6 +463,16 @@ main{
         width: 100px;
         left: -60px;
     }
+    .list-profess p{
+        max-width: 250px;
+        font-size: 16px;
+    }
+    .list-profess h1{
+        font-size: 32px;
+    }
+    .stud-receive li{
+        font-size: 20px;
+    }
 }
 @media (max-width:768px) {
     .space-invaders{
@@ -435,11 +487,14 @@ main{
     .laptop-image, .dino-img, .why-icons{
         display: none;
     }
+    .courses li{
+        font-size: 18px;
+    }
     .convert{
         width: 90%;
     }
     .about_software section{
-        margin-top: 70px;
+        padding-top: 70px;
     }
     .what_text p{
         font-size: 16px;
@@ -447,10 +502,52 @@ main{
     .videos-interview{
         justify-content: center;
     }
+    .list-profess p{
+        max-width: 170px;
+        font-size: 14px;
+    }
+    .list-profess h1{
+        font-size: 28px;
+    }
+    .stud-learn li{
+        font-size: 18px;
+    }
+    .stud-receive li{
+        font-size: 18px;
+    }
+    .stud-title h1{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .list-profess > div{
+        margin-bottom: 40px;
+    }
 }
 @media (max-width:600px){
     .glitch{
         font-size: 38px !important;
+    }
+    .courses ul{
+        max-width: 80%;
+    }
+    .courses li{
+        font-size: 14px;
+        max-width: 220px;
+    }
+    .list-profess br{
+        display: none;
+    }
+    .list-profess p{
+        max-width: 80%;
+        font-size: 12px;
+    }
+    .list-profess h1{
+        text-align: center;
+        max-width: fit-content;
+    }
+    .list-profess > div{
+        flex-direction: column;
+        align-items: center;
     }
     .loader-main{
         max-width: 256px !important;
@@ -468,16 +565,36 @@ main{
         min-width: 100%;
     }
     .what_text p{
+        max-width: 80%;
         font-size: 14px;
     }
-    .stud-title h1{
-        font-size: 16px;
-        font-weight: 500;
+    .what_text > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .stud-learn ul, .stud-receive ul{
+        max-width: 80%;
+    }
+    .stud-learn li, .stud-receive li{
+        font-size: 14px;
+
+    }
+    .stud-center-ul{
+        display: flex !important;
+        justify-content: center;
+        margin-left: 0 !important;
     }
 }
 @media (max-width:400px){
     .glitch{
         font-size: 32px !important;
+    }
+    .stud-title h1{
+        font-size: 14;
+    }
+    .list-profess h1{
+        font-size: 20px;
     }
     
 }
