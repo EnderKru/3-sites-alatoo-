@@ -1,0 +1,91 @@
+.cubehole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cubehole img{
+    width: 60%;
+}
+.spiral-circle, .laptop-2d, .circle-window{
+    position: absolute;
+    z-index: -1;
+}
+.circle-window{
+    right: -5%;
+    top: 20%;
+    width: 400px;
+    
+}
+.circle-window img{
+    animation: rotate360 50s linear infinite;
+}
+.circle-window p{
+    font-size: 96px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg); /* Начальное состояние */
+    }
+    to {
+        transform: rotate(360deg); /* Конечное состояние - 360 градусов */
+    }
+}
+.spiral-circle{
+    right: -6%;
+    bottom: -10%;
+}
+.spiral-circle img{
+    width: 400px;
+}
+.laptop-2d{
+    width: 200px;
+    bottom: 20%;
+    left: -120px;
+}
+@media (max-width:1440px) {
+    .cubehole img{
+        width: 80%;
+    }
+    .spiral-circle{
+        right: -6%;
+        bottom: -30%;
+    }
+    .circle-window{
+        right: -18%;
+    }
+    .circle-window p{
+        top: 30%;
+    }
+}
+@media (max-width: 1200px){
+    .circle-window{
+        scale: 0.7;
+        right: -25%;
+    }
+}
+@media (max-width: 1024px){
+    .spiral-circle img{
+        width: 300px;
+    }
+    .spiral-circle{
+        bottom: -10%;
+    }
+
+}
+@media (max-width: 768px){
+    .cubehole{
+        display: none;
+    }
+
+}
+@media (max-width: 600px){
+    .spiral-circle img{
+        width: 200px;
+    }
+}
