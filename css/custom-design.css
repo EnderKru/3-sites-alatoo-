@@ -1,3 +1,6 @@
+.header-banner-wrapper{
+    padding-bottom: 0;
+}
 .cubehole{
     display: flex;
     justify-content: center;
@@ -13,6 +16,48 @@
     position: absolute;
     z-index: -1;
 }
+.creeping-line{
+    display: flex;
+    overflow-x: hidden;
+    border-top: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255); 
+}
+.creeping-line div{
+    font-size: 64px;
+    font-size: sans-serif;
+    line-height: 1.3;
+    padding: 24px 0;
+    white-space: nowrap;
+    display: inline-block;
+    font-family: 'Raydis';
+    color: #fff;
+}
+.words-line-one{
+    animation: marquee1 20s infinite linear;
+    animation-delay: -20s;
+}
+.words-line-two {
+    animation: marquee2 20s infinite linear;
+    animation-delay: -10s;
+}
+@keyframes marquee1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
 .circle-window{
     right: -5%;
     top: 20%;
@@ -80,6 +125,9 @@
     .cubehole img{
         width: 80%;
     }
+    .creeping-line div{
+        font-size: 24px;
+    }
     .spiral-circle{
         right: -6%;
         bottom: -30%;
@@ -132,7 +180,9 @@
     .circle-window{
         right: -40%;
     }
-
+    .creeping-line{
+        margin-top: 10%;
+    }
 }
 @media (max-width: 600px){
     .spiral-circle img{
