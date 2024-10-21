@@ -3,6 +3,9 @@
     justify-content: center;
     align-items: center;
 }
+.design-left-icons{
+    top:0;
+}
 .cubehole img{
     width: 60%;
 }
@@ -43,10 +46,35 @@
 .spiral-circle img{
     width: 400px;
 }
+.banner-design-title{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 200px;
+}
 .laptop-2d{
     width: 200px;
     bottom: 20%;
     left: -120px;
+}
+@media (max-width:1900px){
+    .design-title{
+        width: 400px;
+        margin-top: 0px !important;
+    }
+    .banner-design-title{
+        margin-top: 100px;
+    }
+    .design-left-icons{
+        left: -100px !important;
+    }
+}
+
+@media (max-width:1600px){
+    .design-left-icons{
+        left: 0 !important; 
+    }
 }
 @media (max-width:1440px) {
     .cubehole img{
@@ -62,6 +90,10 @@
     .circle-window p{
         top: 30%;
     }
+    .design-title{
+        width: 350px;
+        margin-top: 0px !important;
+    }
 }
 @media (max-width: 1200px){
     .circle-window{
@@ -76,11 +108,29 @@
     .spiral-circle{
         bottom: -10%;
     }
+    .design-title{
+        width: 250px;
+    }
+    .laptop-banner svg {
+        height: 300px !important;
+    }
+    
+}
+@media (max-width:920px) {
 
+    .header-banner__main{
+        flex: none !important;
+    }
 }
 @media (max-width: 768px){
     .cubehole{
         display: none;
+    }
+    .banner-design-title{
+        margin-top: 300px;
+    }
+    .circle-window{
+        right: -40%;
     }
 
 }
@@ -88,4 +138,25 @@
     .spiral-circle img{
         width: 200px;
     }
+    .design-title{
+        width: 350px;
+        margin-left: 30px;
+    }
+    .circle-window{
+        right: -40%;
+        scale: 0.4;
+        top: 0%;
+    }
+}
+@media (max-width: 400px){
+    .design-title{
+        width: 300px;
+        margin-left: 30px;
+    }
+    .circle-window{
+        right: -40%;
+        scale: 0.3;
+        top: -10%;
+    }
+
 }
